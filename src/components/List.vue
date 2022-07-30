@@ -33,9 +33,11 @@
 <script setup name="List" lang="ts">
 // 声明props
 import { reactive } from "vue";
+import {IAreaTree} from "../type/index"
+
 //无需引入
 const props = defineProps({
-  list: Array,
+  list: Array<IAreaTree>,
   showChildren: Boolean,
 });
 
